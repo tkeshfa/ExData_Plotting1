@@ -7,7 +7,7 @@ file_sub<-subset(file,Date=="2007-02-01")
 file_sub<-rbind(file_sub,subset(file,Date=="2007-02-02"))
 
 # Plot 3
-plot(file_sub$Time,file_sub$Sub_metering_1,type="n",xlab="Day",ylab="Global Active Power(Kilowatts)")
+plot(file_sub$Time,file_sub$Sub_metering_1,type="n",xlab="datetime",ylab="Energy Sub metering")
 lines(file_sub$Time,file_sub$Sub_metering_1)
 lines(file_sub$Time,file_sub$Sub_metering_2,col="red")
 lines(file_sub$Time,file_sub$Sub_metering_3,col="blue")
